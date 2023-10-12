@@ -1,0 +1,61 @@
+@media (max-width: 800px) {
+    .header{
+        &-burget-mob{
+            display: block;
+            cursor: pointer;
+        }
+        &-nav{
+            &-top{
+                display: none;
+            }
+
+            &__time-work{
+                max-width: 188px;
+                text-align: right;
+            }
+        }
+
+        &-contact{
+            display: none;
+        }
+    }
+    .header-sub{
+        &__nav{
+            display: none;
+        }
+
+        &__search{
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .header{
+        &-logo{
+            &__link{
+                width: 79px;
+                height: 69px;
+            }
+        }
+        &-nav{
+            display: none;
+        }
+
+        &-contacts{
+            &__phones{
+                display: none;
+            }
+
+            &__langs{
+                flex-flow: column;
+                align-items: flex-end;
+                gap: 20px;
+            }
+
+            &__select-lang{
+                font-size: 14px;
+            }
+        }
+    }
+}

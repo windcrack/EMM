@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto 65px;
+
+    &-block{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+
+        &__link{
+            color: inherit;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            text-decoration: none;
+        }
+    }
+}
