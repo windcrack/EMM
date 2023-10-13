@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
 :root {
   --color-white: #fff;
   --color-black: #222;
@@ -11,30 +12,6 @@
   --font-main: "Montserrat", sans-serif;
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../../fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../../fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
 * {
   margin: 0;
   padding: 0;
@@ -119,6 +96,9 @@ img {
 .form-block__input::-moz-placeholder {
   opacity: 1;
 }
+.form-block__input:-ms-input-placeholder {
+  opacity: 1;
+}
 .form-block__input::placeholder {
   opacity: 1;
 }
@@ -139,6 +119,9 @@ img {
   font-weight: 400;
 }
 .form-text__textarea::-moz-placeholder {
+  opacity: 1;
+}
+.form-text__textarea:-ms-input-placeholder {
   opacity: 1;
 }
 .form-text__textarea::placeholder {
@@ -762,7 +745,7 @@ header {
     text-align: left;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .header-logo__link {
     width: 79px;
     height: 69px;
@@ -801,7 +784,7 @@ header {
     display: block;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 650px) {
   .btn-lang {
     font-size: 14px;
   }
@@ -865,7 +848,7 @@ header {
     font-size: 14px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .title {
     font-size: 25px;
   }
@@ -1006,7 +989,7 @@ header {
     grid-column: 1/span 2;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .hero {
     min-height: 375px;
   }
