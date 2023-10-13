@@ -19,7 +19,7 @@ export function slider() {
           slidesPerView: 1,
           spaceBetween: 20,
         },
-        400: {
+        600: {
           slidesPerView: 2,
           spaceBetween: 20,
         },
