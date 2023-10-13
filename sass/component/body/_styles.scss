@@ -46,6 +46,10 @@ img{
     }
 }
 
+.hide{
+    display: none !important;
+}
+
 .typo{
 
     font-size: 18px;
@@ -69,7 +73,8 @@ img{
     gap: 29px 30px;
 
     &-block{
-        min-width: 410px;
+        max-width: 410px;
+        width: 100%;
 
         &__input{
             width: 100%;

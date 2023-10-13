@@ -165,8 +165,135 @@
                 max-height: 375px;
             }
         &-slider{
+            .swiper-slide{
+                &::before{
+                    font-size: 48px;
+                    bottom: 45px;
+                }
+            }
             &__body{
                 max-height: 375px;
+            }
+
+            &__line{
+                margin-right: 4rem;
+            }
+
+            &__footer{
+                bottom: 40px;
+            }
+        }
+
+        &-title{
+            &__sub{
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .home{
+        &-advantages{
+            &__body{
+                gap: 30px;
+            }
+
+            &__block{
+                display: grid;
+                grid-template-columns: 116px 117px;
+                gap: 17px;
+            }
+
+            &__number{
+                justify-self: end;
+                font-size: 48px;
+                display: inline-flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                width: 100%;
+                gap: 6px;
+            }
+
+            &__small-text{
+                font-size: 18px;
+                padding-bottom: 6px;
+            }
+
+            &__text{
+                // max-width: 171px;
+                width: 100%;
+            }
+        }
+
+        &-equipment{
+            &__header{
+                margin-bottom: 35px;
+            }
+
+            &__body{
+                grid-template-columns: 1fr;
+            }
+
+            &__block,
+            &__image{
+                height: 240px;
+            }
+        }
+
+        &-other{
+            &__body{
+                flex-flow: column;
+            }
+
+            &__block,
+            &__image{
+                height: 114px;
+            }
+        }
+
+        &-services{
+            &__body{
+                grid-template-columns: 1fr;
+            }
+
+            &__image{
+                height: 114px;
+                margin-bottom: 28px;
+            }
+        }
+
+        &-news{
+            margin-bottom: 58px;
+            &__header{
+                justify-content: center;
+
+                .title-controls{
+                    display: none;
+                }
+            }
+
+            &__image{
+                height: 175px;
+            }
+        }
+
+        &-contacts{
+            &__row{
+                &:last-of-type{
+                    grid-template-columns: 1fr;
+                }
+            }
+            
+            &__info{
+                flex-flow: column;
+                align-items: center;
+                &:nth-of-type(3){
+                    grid-column: auto;
+                }
+
+                &-link{
+                    text-align: center;
+                }
             }
         }
     }

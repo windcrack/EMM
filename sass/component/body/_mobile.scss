@@ -11,6 +11,15 @@
         }
     }
 
+    .typo{
+        font-size: 16px;
+        line-height: 26px;
+        p{
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
     .form{
         grid-template-columns: repeat(2, 1fr);
 
@@ -35,6 +44,41 @@
             &__policy{
                 font-size: 14px;
             }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .title{
+        font-size: 25px;
+
+        &-second{
+            font-size: 26px;
+            text-align: center;
+        }
+
+        &-small{
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+    .typo{
+        font-size: 14px;
+        line-height: 24px;
+        p{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+
+    .form{
+        grid-template-columns: 1fr;
+
+        &-block,
+        &-text,
+        &-footer{
+            grid-column: auto;
+            grid-row: auto;
         }
     }
 }

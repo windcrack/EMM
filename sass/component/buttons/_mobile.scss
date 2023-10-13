@@ -3,5 +3,16 @@
         &-lang{
             font-size: 14px;
         }
+
+        &_slider-prev,
+        &_slider-next{
+            width: 39px;
+            height: 21px;
+
+            svg{
+                width: 39px;
+                height: 21px;
+            }
+        }
     }
 }
