@@ -89,6 +89,24 @@
                 display: none;
             }
 
+            &__select-wrap{
+                justify-content: flex-end;
+                .select2-container{
+                    max-width: 127px;
+                    width: 100% !important;
+                }
+                .select2-container--default .select2-selection--single .select2-selection__rendered{
+                    padding: 0;
+                }
+
+                .select2-container--default .select2-selection--single .select2-selection__arrow{
+                    height: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -25px;
+                }
+            }
+
             &__langs{
                 flex-flow: column;
                 align-items: flex-end;
