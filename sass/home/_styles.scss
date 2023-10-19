@@ -9,6 +9,8 @@
         top: 50%;
         transform: translateY(-50%);
         z-index: 1;
+        max-width: 1290px;
+        width: calc(100% - 40px);
 
         .title{
             margin-bottom: 23px;
