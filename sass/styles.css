@@ -2,6 +2,7 @@
   --color-white: #fff;
   --color-black: #222;
   --color-green: #69A54D;
+  --color-green-dark: #7F9D64;
   --color-gold: #CDBD84;
   --color-gray: #E4E4E4;
   --color-gray-rgba: rgba(196, 196, 196, 0.30);
@@ -647,7 +648,7 @@ header {
   line-height: 24px; /* 150% */
 }
 .home-feedback {
-  background: var(--color-green);
+  background: var(--color-green-dark);
   padding: 75px 0 89px;
   display: grid;
 }
