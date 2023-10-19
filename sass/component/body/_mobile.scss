@@ -1,6 +1,13 @@
-@media (max-width: 800px) {
+@media (max-width: 1350px) {
+    .form{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 850px) {
     .title{
-        font-size: 57px;
+        // font-size: 57px;
 
         &-second{
             font-size: 38px;
@@ -77,6 +84,7 @@
         &-block,
         &-text,
         &-footer{
+            max-width: 100%;
             grid-column: auto;
             grid-row: auto;
         }

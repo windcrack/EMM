@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
 :root {
   --color-white: #fff;
   --color-black: #222;
@@ -12,6 +11,30 @@
   --font-main: "Montserrat", sans-serif;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../../fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +59,7 @@ img {
 .title {
   color: var(--color-white-rgba);
   text-align: center;
-  font-size: clamp(108px, 3vw, 25px);
+  font-size: clamp(25px, 8vw, 108px);
   font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
@@ -384,11 +407,11 @@ header {
   content: counter(lis, decimal-leading-zero);
   position: absolute;
   bottom: 75px;
-  right: 15%;
+  right: clamp(4%, 16vw, 15%);
   color: var(--color-white-rgba);
   text-align: right;
   font-family: Montserrat;
-  font-size: 96px;
+  font-size: clamp(48px, 8vw, 96px);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -688,7 +711,7 @@ header {
   text-decoration: none;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1060px) {
   .header-burget-mob {
     display: block;
     cursor: pointer;
@@ -745,7 +768,7 @@ header {
     text-align: left;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .header-logo__link {
     width: 79px;
     height: 69px;
@@ -813,10 +836,12 @@ header {
     line-height: 30px;
   }
 }
-@media (max-width: 800px) {
-  .title {
-    font-size: 57px;
+@media (max-width: 1350px) {
+  .form {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
+@media (max-width: 850px) {
   .title-second {
     font-size: 38px;
   }
@@ -872,6 +897,7 @@ header {
     grid-template-columns: 1fr;
   }
   .form-block, .form-text, .form-footer {
+    max-width: 100%;
     grid-column: auto;
     grid-row: auto;
   }
@@ -894,10 +920,6 @@ header {
   }
   .hero-slider .swiper-slide {
     max-height: 520px;
-  }
-  .hero-slider .swiper-slide::before {
-    font-size: 64px;
-    right: 4%;
   }
   .hero-slider__body {
     max-height: 520px;
@@ -1002,7 +1024,6 @@ header {
     max-height: 375px;
   }
   .hero-slider .swiper-slide::before {
-    font-size: 48px;
     bottom: 45px;
   }
   .hero-slider__body {

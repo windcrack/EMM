@@ -24,7 +24,7 @@ img{
     color: var(--color-white-rgba);
     text-align: center;
     // font-size: 108px;
-    font-size: clamp(108px, 3vw, 25px);
+    font-size: clamp(25px, 8vw, 108px);
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;

@@ -35,11 +35,13 @@
                 content: counter(lis, decimal-leading-zero);
                 position: absolute;
                 bottom: 75px;
-                right: 15%;
+                //right: 15%;
+                right: clamp(4%, 16vw, 15%);
                 color: var(--color-white-rgba);
                 text-align: right;
                 font-family: Montserrat;
-                font-size: 96px;
+                // font-size: 96px;
+                font-size: clamp(48px, 8vw, 96px);
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;

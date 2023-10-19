@@ -26,8 +26,8 @@
             .swiper-slide{
                 max-height: 520px;
                 &::before{
-                    font-size: 64px;
-                    right: 4%;
+                    //font-size: 64px;
+                    //right: 4%;
                 }
             }
 
@@ -177,7 +177,7 @@
         &-slider{
             .swiper-slide{
                 &::before{
-                    font-size: 48px;
+                    //font-size: 48px;
                     bottom: 45px;
                 }
             }
