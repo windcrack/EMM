@@ -23,7 +23,8 @@ img{
 .title{
     color: var(--color-white-rgba);
     text-align: center;
-    font-size: 108px;
+    // font-size: 108px;
+    font-size: clamp(108px, 3vw, 25px);
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;

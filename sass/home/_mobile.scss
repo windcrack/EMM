@@ -1,4 +1,14 @@
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
+    .home{
+        &-services{
+            &__body{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
     .hero{
         min-height: 520px;
         &-title{

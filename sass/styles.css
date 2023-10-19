@@ -36,7 +36,7 @@ img {
 .title {
   color: var(--color-white-rgba);
   text-align: center;
-  font-size: 108px;
+  font-size: clamp(108px, 3vw, 25px);
   font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
@@ -688,7 +688,7 @@ header {
   text-decoration: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .header-burget-mob {
     display: block;
     cursor: pointer;
@@ -797,7 +797,7 @@ header {
     height: 21px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .footer {
     flex-flow: column;
     align-items: center;
@@ -876,7 +876,12 @@ header {
     grid-row: auto;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
+  .home-services__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 850px) {
   .hero {
     min-height: 520px;
   }
