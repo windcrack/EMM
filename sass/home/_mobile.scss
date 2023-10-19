@@ -25,10 +25,6 @@
         &-slider{
             .swiper-slide{
                 max-height: 520px;
-                &::before{
-                    //font-size: 64px;
-                    //right: 4%;
-                }
             }
 
             &__body{
